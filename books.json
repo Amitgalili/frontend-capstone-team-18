@@ -1,38 +1,39 @@
 [
-  {
-    "id": 1,
-    "title": "Harry Potter and the Sorcerer’s Stone",
-    "author": "J.K. Rowling",
-    "category": "Fantasy",
-    "year": 1997,
-    "language": "English",
-    "isbn": "9780590353427",
-    "description": "A young wizard discovers his true identity and begins an unforgettable journey at Hogwarts, where magic, friendship, and danger await.",
-    "cover": "images/harry-potter.jpg",
-    "available": true
-  },
-  {
-    "id": 2,
-    "title": "The Alchemist",
-    "author": "Paulo Coelho",
-    "category": "Fiction",
-    "year": 1988,
-    "language": "English",
-    "isbn": "9780061122415",
-    "description": "A timeless story about following your dreams, listening to your heart, and finding meaning through personal destiny.",
-    "cover": "images/the-alchemist.jpg",
-    "available": true
-  },
-  {
-    "id": 3,
-    "title": "Atomic Habits",
-    "author": "James Clear",
-    "category": "Self-Improvement",
-    "year": 2018,
-    "language": "English",
-    "isbn": "9780735211292",
-    "description": "A practical guide to building good habits, breaking bad ones, and improving yourself through small, consistent changes.",
-    "cover": "images/atomic-habits.jpg",
-    "available": false
-  }
+ {
+  "id": 1,
+  "title": "Harry Potter and the Sorcerer’s Stone",
+  "author": "J.K. Rowling",
+  "category": "Fantasy",
+  "year": 1997,
+  "language": "English",
+  "isbn": "9780590353427",
+  "description": "Harry Potter and the Sorcerer’s Stone is the first book in the famous fantasy series that introduces readers to the magical world of Hogwarts. The story follows Harry, an orphaned boy who discovers on his eleventh birthday that he is a wizard. As he begins his studies at Hogwarts School of Witchcraft and Wizardry, Harry learns about friendship, courage, and loyalty while uncovering secrets about his past. The book blends magic, mystery, and adventure, creating an engaging story that sets the foundation for an epic journey.",
+  "cover": "images/harry-potter.jpg",
+  "available": true
+},
+ {
+  "id": 2,
+  "title": "The Alchemist",
+  "author": "Paulo Coelho",
+  "category": "Fiction",
+  "year": 1988,
+  "language": "English",
+  "isbn": "9780061122415",
+  "description": "The Alchemist tells the story of Santiago, a young shepherd who dreams of finding a hidden treasure. Motivated by recurring dreams, he sets out on a journey that takes him far from home and challenges him both physically and emotionally. Along the way, Santiago meets mentors who teach him about listening to his heart, recognizing opportunities, and following his personal destiny. The novel explores themes of self-discovery, faith, and perseverance, encouraging readers to pursue their dreams despite fear and uncertainty.",
+  "cover": "images/the-alchemist.jpg",
+  "available": true
+},
+ {
+  "id": 3,
+  "title": "Atomic Habits",
+  "author": "James Clear",
+  "category": "Self-Improvement",
+  "year": 2018,
+  "language": "English",
+  "isbn": "9780735211292",
+  "description": "Atomic Habits is a practical guide that explains how small, consistent habits can lead to significant personal improvement over time. James Clear presents a clear framework for understanding how habits are formed and how they can be changed effectively. The book focuses on building good habits, breaking bad ones, and creating systems that support long-term success rather than relying only on motivation. With real-world examples and actionable advice, Atomic Habits helps readers improve productivity, health, and personal growth through simple daily actions.",
+  "cover": "images/atomic-habits.jpg",
+  "available": false
+}
+
 ]
