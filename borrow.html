@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borrow | Bookify</title>
+
+    <!-- העיצוב של הדף הזה -->
+    <link rel="stylesheet" href="borrowstyle.css" />
+
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    />
+  </head>
+
+  <body>
+
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__mark">
+            <!-- TODO: החלף ללוגו שלכם -->
+            <img src="images/logo.jpeg" alt="Bookify logo" />
+          </span>
+          <span class="brand__name">Bookify</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav__link" href="index.html">Home</a>
+          <a class="nav__link" href="browse.html">Browse</a>
+          <a class="nav__link" href="mybooks.html">My Books</a>
+          <a class="nav__link nav__link--active" href="borrow.html">Borrow</a>
+          <a class="nav__link" href="about.html">About</a>
+        </nav>
+
+        <div class="topbar__right">
+          <button class="icon-btn" aria-label="Search">
+            <!-- אייקון חיפוש -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M10.5 18.5a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="M16.5 16.5 21 21"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+
+          <div class="avatar" aria-label="User">A</div>
+          <!-- TODO: שם משתמש אמיתי / מה-LocalStorage -->
+          <span class="user-name">Amit</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== Hero קטן (לא ענק כמו About, אבל באותו מותג) ===== -->
+      <section class="hero hero--mini">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <span class="pill">◎ Book Details</span>
+            <!-- TODO: שם הספר מה-JSON -->
+            <h1 id="bookTitle">[שם הספר]</h1>
+            <p class="hero__subtitle">
+              <!-- TODO: מחבר מה-JSON -->
+              מאת <strong id="bookAuthor">[שם המחבר]</strong> ·
+              <!-- TODO: קטגוריה מה-JSON -->
+              <span id="bookCategory">[קטגוריה]</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Page Content ===== -->
+      <section class="details">
+        <div class="container details__grid">
+          <!-- ===== צד ימין: Cover + quick meta ===== -->
+          <aside class="card cover-card">
+            <div class="cover">
+              <!-- TODO: תמונת כריכה מה-JSON (אם אין - להשאיר placeholder) -->
+              <img
+                id="bookCover"
+                src="images/placeholder-cover.png"
+                alt="Book cover"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="cover-meta">
+              <div class="cover-meta__row">
+                <span class="muted">ISBN</span>
+                <!-- TODO: ISBN מה-JSON -->
+                <strong id="bookIsbn">[isbn]</strong>
+              </div>
+
+              <div class="cover-meta__row">
+                <span class="muted">Year</span>
+                <!-- TODO: שנה מה-JSON -->
+                <strong id="bookYear">[year]</strong>
+              </div>
+
+              <div class="cover-meta__row">
+                <span class="muted">Language</span>
+                <!-- TODO: שפה מה-JSON -->
+                <strong id="bookLanguage">[language]</strong>
+              </div>
+            </div>
+
+            <div class="availability">
+              <div class="availability__left">
+                <div class="availability__label">Status</div>
+                <!-- TODO: אם מושאל -> החלף class ל: badge badge--borrowed -->
+                <div id="bookStatus" class="badge badge--available">Available</div>
+              </div>
+
+              <div class="availability__right">
+                <!-- TODO: אם תרצה "Due date" כשמושאל -->
+                <div class="availability__hint" id="bookAvailabilityText">
+                  [טקסט זמינות / Due date]
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <!-- ===== צד שמאל: Info + Actions ===== -->
+          <article class="card info-card">
+            <div class="info-head">
+              <h2 class="section-title">Borrow / Return</h2>
+              <span class="muted">Quick actions & details</span>
+            </div>
+
+            <div class="info-grid">
+              <div class="info-item">
+                <div class="info-item__label">Category</div>
+                <!-- TODO: קטגוריה מה-JSON -->
+                <div class="info-item__value" id="bookCategory2">[קטגוריה]</div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-item__label">Shelf</div>
+                <!-- TODO: אם יש לכם מיקום מדף/קוד ספר -->
+                <div class="info-item__value" id="bookShelf">[A-12]</div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-item__label">ID</div>
+                <!-- TODO: מזהה ספר מה-JSON -->
+                <div class="info-item__value" id="bookId">[id]</div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-item__label">Copies</div>
+                <!-- TODO: כמות עותקים / או 1 אם אין -->
+                <div class="info-item__value" id="bookCopies">[1]</div>
+              </div>
+            </div>
+
+            <div class="desc-block">
+              <h3 class="desc-title">Description</h3>
+              <!-- TODO: תיאור מה-JSON -->
+              <p id="bookDescription" class="desc-text">
+                [כאן יופיע תיאור קצר של הספר מה-JSON]
+              </p>
+            </div>
+
+            <div class="actions">
+              <!-- TODO: כפתורים יופעלו/יכובו לפי סטטוס ב-JS -->
+              <button id="borrowBtn" class="btn btn--primary" type="button">
+                Borrow Book
+              </button>
+
+              <button id="returnBtn" class="btn btn--ghost" type="button" disabled>
+                Return Book
+              </button>
+
+              <a class="btn btn--link" href="browse.html">Back to Browse →</a>
+            </div>
+
+            <!-- TODO: הודעת מערכת (Borrow success / not available) -->
+            <div id="systemMessage" class="system-message" aria-live="polite"></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== History Preview (LocalStorage) ===== -->
+      <section class="history">
+        <div class="container">
+          <div class="history__head">
+            <h2 class="section-title">Recently Viewed</h2>
+            <a class="history__link" href="history.html">View all →</a>
+          </div>
+
+          <ul id="historyList" class="history__list">
+            <!-- TODO: למלא ב-JS מתוך LocalStorage -->
+            <li class="history__empty">No items yet. Browse books to build history.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">© 2026 Bookify, Inc</p>
+
+      <a
+        href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        aria-label="Bootstrap"
+      >
+        <!-- TODO: החלף ללוגו שלכם -->
+        <img src="./images/logo.jpeg" alt="Our logo" width="120" height="90" />
+      </a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">Contact us</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+    </footer>
+    <script src="borrow.js"></script>
+  </body>
+</html>
