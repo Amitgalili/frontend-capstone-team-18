@@ -11,45 +11,30 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="homeStyle.css">
   </head>
 
   <body>
-    <header>
-      <div class="wrap" id="top">
-        <a href="index.html" id="brand">
-          <span id="logo">
-            <img src="images/logo.jpeg" alt="Bookify logo" />
-          </span>
-          <span id="name">Bookify</span>
-        </a>
+    <header class="bf-header">
+      <div class="bf-header__inner container">
+          <a class="bf-brand" href="#">
+              <img class="bf-logo" src="images/NewLogo.png" alt="Bookify logo" onerror="this.style.display='none'">
 
-        <nav aria-label="Primary">
-          <a href="index.html">Home</a>
-          <a href="about.html" aria-current="page">About</a>
-          <a href="contact.html">Contact Us</a>
-        </nav>
+          </a>
 
-        <div id="right">
-          <button id="search" aria-label="Search">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M10.5 18.5a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z"
-                stroke="currentColor"
-                stroke-width="2"
-              />
-              <path
-                d="M16.5 16.5 21 21"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-            </svg>
-          </button>
-          <span id="avatar">A</span>
-          <span id="user">Amit</span>
-        </div>
+          <nav aria-label="Primary">
+              <a href="home.html">Home</a>
+              <a href="#">Browse</a>
+              <a href="about.html" aria-current="page">About</a>
+              <a href="contact.html">Contact Us</a>
+            </nav>
+
+          <div class="bf-auth">
+              <button class="bf-btn bf-btn--ghost" type="button">Login</button>
+              <button class="bf-btn bf-btn--primary" type="button">Sign up</button>
+          </div>
       </div>
-    </header>
+  </header>
 
     <main>
       <section id="hero">
@@ -250,7 +235,7 @@
       <div class="wrap" id="foot-grid">
         <div>
           <div id="foot-brand">
-            <span id="foot-logo"><img src="images/logo.jpeg" alt="Bookify logo" /></span>
+            <span id="foot-logo"><img src="images/NewLogo.png" alt="Bookify logo" /></span>
             <span id="foot-name">Bookify</span>
           </div>
           <p id="tag">
