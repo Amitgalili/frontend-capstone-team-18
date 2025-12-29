@@ -1,13 +1,20 @@
 :root {
-  --bg: #ffffff;
-  --text: #151515;
-  --muted: #6b7280;
-  --border: #e6e6e6;
-  --hero: #141414;
-  --hero2: #2a2a2a;
-  --accent: #c57a2a;
-  --shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  /* Home page palette */
+  --blue1: #8a3a16;
+  --blue2: #e46a10;
+
+  --bg: #f7efe9;
+  --text: #2b1409;
+  --muted: #7a4a32;
+
+  --border: rgba(43, 20, 9, 0.15);
+  --shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
   --r: 18px;
+
+  /* Keep your About page hooks */
+  --hero: var(--blue1);
+  --hero2: var(--blue2);
+  --accent: var(--blue2);
 }
 
 * { box-sizing: border-box; }
@@ -32,7 +39,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 30;
-  background: rgba(255, 255, 255, 0.9);
+  background: #fff;
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(10px);
 }
@@ -63,12 +70,12 @@ header {
 nav { display: flex; gap: 18px; }
 nav a {
   font-weight: 500;
-  color: #3b3b3b;
+  color: var(--text);
   padding: 10px 12px;
   border-radius: 999px;
 }
-nav a:hover { background: #f3f4f6; }
-nav a[aria-current="page"] { background: #111; color: #fff; }
+nav a:hover { background: rgba(228, 106, 16, 0.10); color: var(--blue1); }
+nav a[aria-current="page"] { background: rgba(228, 106, 16, 0.14); color: var(--blue1); }
 
 #right { display: flex; align-items: center; gap: 10px; }
 #search {
@@ -86,7 +93,7 @@ nav a[aria-current="page"] { background: #111; color: #fff; }
   width: 34px;
   height: 34px;
   border-radius: 999px;
-  background: var(--accent);
+  background: linear-gradient(110deg, var(--blue1), var(--blue2));
   color: #fff;
   font-weight: 800;
   display: grid;
@@ -96,8 +103,8 @@ nav a[aria-current="page"] { background: #111; color: #fff; }
 
 /* Hero */
 #hero {
-  background: radial-gradient(1100px 500px at 25% 35%, rgba(255,255,255,0.08), transparent 60%),
-              linear-gradient(135deg, var(--hero), var(--hero2));
+  background: radial-gradient(1100px 500px at 25% 35%, rgba(255,255,255,0.22), transparent 60%),
+              linear-gradient(110deg, var(--blue1), var(--blue2));
   color: #fff;
   padding: 86px 0 70px;
 }
@@ -122,9 +129,9 @@ nav a[aria-current="page"] { background: #111; color: #fff; }
   border-radius: 12px;
   font-weight: 800;
   border: 1px solid transparent;
-  background: var(--accent);
+  background: linear-gradient(110deg, var(--blue1), var(--blue2));
   color: #fff;
-  box-shadow: 0 12px 26px rgba(197, 122, 42, 0.25);
+  box-shadow: 0 12px 26px rgba(228, 106, 16, 0.28);
 }
 .btn:hover { filter: brightness(0.97); }
 .btn[data-ghost] {
@@ -147,7 +154,7 @@ nav a[aria-current="page"] { background: #111; color: #fff; }
 .lbl { margin-top: 6px; color: var(--muted); font-weight: 500; font-size: 13px; }
 
 /* Mission */
-#mission { padding: 64px 0; background: #fafafa; }
+#mission { padding: 64px 0; background: rgba(255, 255, 255, 0.65); }
 #mission-grid {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
@@ -160,8 +167,8 @@ nav a[aria-current="page"] { background: #111; color: #fff; }
   gap: 8px;
   padding: 8px 12px;
   border-radius: 999px;
-  background: rgba(197, 122, 42, 0.12);
-  color: #8b4c12;
+  background: rgba(228, 106, 16, 0.14);
+  color: var(--blue1);
   font-weight: 800;
   font-size: 13px;
 }
@@ -264,7 +271,7 @@ nav a[aria-current="page"] { background: #111; color: #fff; }
 
 /* Footer */
 footer {
-  background: #111;
+  background: linear-gradient(180deg, #3a1f14, #1f0f08);
   color: rgba(255, 255, 255, 0.86);
   margin-top: 40px;
 }
@@ -292,13 +299,13 @@ footer h4 {
   font-size: 14px;
   letter-spacing: 0.12em;
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.92);
+  color: #f3d2b3;
 }
-footer a { display: block; padding: 9px 0; color: rgba(255, 255, 255, 0.62); font-weight: 650; }
+footer a { display: block; padding: 9px 0; color: rgba(255, 255, 255, 0.78); font-weight: 650; }
 footer a:hover { color: rgba(255, 255, 255, 0.9); }
 .hrs { display: flex; justify-content: space-between; gap: 18px; padding: 9px 0; color: rgba(255,255,255,0.62); font-weight: 650; }
 #bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   padding: 22px 0 30px;
   display: flex;
   justify-content: space-between;
@@ -308,7 +315,7 @@ footer a:hover { color: rgba(255, 255, 255, 0.9); }
   font-weight: 650;
 }
 #links { display: flex; gap: 26px; flex-wrap: wrap; }
-#links a { color: rgba(255, 255, 255, 0.55); font-weight: 800; padding: 0; }
+#links a { color: rgba(255, 255, 255, 0.65); font-weight: 800; padding: 0; }
 
 /* Responsive */
 @media (max-width: 1100px) {
