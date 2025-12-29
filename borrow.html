@@ -18,52 +18,33 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="homeStyle.css">
+    <link rel="stylesheet" href="aboutstyle.css">
+    <link rel="stylesheet" href="contact.css">
   </head>
 
   <body>
     <!-- Top Nav -->
-    <header class="topbar">
-      <div class="container topbar__inner">
-        <a class="brand" href="index.html">
-          <span class="brand__mark">
-            <!-- TODO: replace with your logo -->
-            <img src="images/logo.jpeg" alt="Bookify logo" />
-          </span>
-          <span class="brand__name">Bookify</span>
-        </a>
+    <header class="bf-header">
+      <div class="bf-header__inner container">
+          <a class="bf-brand" href="#">
+              <img class="bf-logo" src="images/NewLogo.png" alt="Bookify logo" onerror="this.style.display='none'">
 
-        <nav class="nav" aria-label="Primary">
-          <a class="nav__link" href="index.html">Home</a>
-          <a class="nav__link" href="browse.html">Browse</a>
-          <a class="nav__link" href="mybooks.html">My Books</a>
-          <a class="nav__link nav__link--active" href="borrow.html">Borrow</a>
-          <a class="nav__link" href="about.html">About</a>
-        </nav>
-
-        <div class="topbar__right">
-          <!-- Search/Browse -->
-          <a class="icon-btn" href="browse.html" aria-label="Browse / Search">
-            <!-- magnifier -->
-            <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path
-                d="M10.5 18.5a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z"
-                stroke="currentColor"
-                stroke-width="2"
-              />
-              <path
-                d="M16.5 16.5 21 21"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-            </svg>
           </a>
 
-          <div class="avatar" aria-label="User">A</div>
-          <span class="user-name">Amit</span>
-        </div>
+          <nav aria-label="Primary">
+              <a href="home.html">Home</a>
+              <a href="#">Browse</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact Us</a>
+            </nav>
+
+          <div class="bf-auth">
+              <button class="bf-btn bf-btn--ghost" type="button">Login</button>
+              <button class="bf-btn bf-btn--primary" type="button">Sign up</button>
+          </div>
       </div>
-    </header>
+  </header>
 
     <main>
       <!-- Hero -->
@@ -509,7 +490,7 @@
         class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
         aria-label="Bootstrap"
       >
-        <img src="./images/logo.jpeg" alt="Our logo" width="120" height="90" />
+        <img src="./images/NewLogo.png" alt="Our logo" width="120" height="90" />
       </a>
 
       <ul class="nav col-md-4 justify-content-end">

@@ -8,6 +8,8 @@
     <title>Bookify</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="homeStyle.css" />
+    <link rel="stylesheet" href="aboutstyle.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
@@ -20,11 +22,12 @@
 
             </a>
 
-            <nav class="bf-nav">
-                <a class="bf-nav__link active" href="#">Home</a>
-                <a class="bf-nav__link" href="#">About</a>
-                <a class="bf-nav__link" href="#">My Profile</a>
-            </nav>
+            <nav aria-label="Primary">
+                <a href="home.html" aria-current="page">Home</a>
+                <a href="#">Browse</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+              </nav>
 
             <div class="bf-auth">
                 <button class="bf-btn bf-btn--ghost" type="button">Login</button>
@@ -218,7 +221,7 @@
 
             <div class="site-footer__col">
                 <h4>EXPLORE</h4>
-                <a href="#">About Us</a>
+                <a href="about.html">About Us</a>
                 <a href="#">Browse Catalog</a>
                 <a href="#">Fiction</a>
                 <a href="#">Non-Fiction</a>
@@ -247,7 +250,7 @@
             <div class="site-footer__links">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
-                <a href="#">Contact Us</a>
+                <a href="contact.html">Contact Us</a>
             </div>
         </div>
     </footer>
