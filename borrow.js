@@ -6,6 +6,24 @@ fetch("./books.json")
   .then((res) => res.json())
   .then((books) => {
     const book = books.find((b) => b.id === bookId);
+    
+    // ===== Save recently viewed books =====
+    const HISTORY_KEY = "recentBooks";
+
+    let recentBooks = JSON.parse(localStorage.getItem(HISTORY_KEY)) || [];
+
+    // remove current book if already exists
+    recentBooks = recentBooks.filter(id => id !== bookId);
+
+    // add current book to beginning
+    recentBooks.unshift(bookId);
+
+    // keep only last 3
+    recentBooks = recentBooks.slice(0, 3);
+
+    // save back to localStorage
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(recentBooks));
+
 
     if (!book) {
       document.body.innerHTML = "<h2 style='padding:20px'>Book not found</h2>";
@@ -47,6 +65,43 @@ fetch("./books.json")
       isExpanded = !isExpanded;
       renderDescToggle();
     });
+
+    // ===== Render Recently Viewed =====
+    const historyList = document.getElementById("historyList");
+
+    function renderRecentlyViewed() {
+      if (!historyList) return;
+
+      const recentIds = JSON.parse(localStorage.getItem("recentBooks")) || [];
+
+      const recentBooks = recentIds
+        .map(id => books.find(b => b.id === id))
+        .filter(Boolean);
+
+      if (recentBooks.length === 0) {
+        historyList.innerHTML = `
+      <li class="history__empty">
+        No items yet. Browse books to build history.
+      </li>`;
+        return;
+      }
+
+      historyList.innerHTML = recentBooks.map(book => `
+    <li class="history__item">
+      <a href="borrow.html?id=${book.id}" class="history__card">
+        <img src="${book.cover}" alt="${book.title}" class="history__img">
+        <div class="history__info">
+          <div class="history__title">${book.title}</div>
+          <div class="history__author">${book.author}</div>
+        </div>
+      </a>
+    </li>
+  `).join("");
+    }
+
+    // קריאה לפונקציה
+    renderRecentlyViewed();
+
 
     renderDescToggle();
 
