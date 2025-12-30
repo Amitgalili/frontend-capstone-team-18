@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog | Bookify</title>
+
+    <!-- Your existing styles -->
+    <link rel="stylesheet" href="aboutstyle.css" />
+    <link rel="stylesheet" href="homeStyle.css" />
+
+    <!-- Catalog page styles -->
+    <link rel="stylesheet" href="catalog.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="catalog.js" defer></script>
+  </head>
+
+  <body class="catalog-page">
+    <!-- ===== HEADER (your code) ===== -->
+    <header class="bf-header">
+      <div class="bf-header__inner container">
+        <a class="bf-brand" href="#">
+          <img
+            class="bf-logo"
+            src="images/NewLogo.png"
+            alt="Bookify logo"
+            onerror="this.style.display='none'"
+          />
+        </a>
+
+        <nav aria-label="Primary">
+          <a href="home.html">Home</a>
+          <a href="catalog.html" aria-current="page">Browse</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <div class="bf-auth">
+          <button class="bf-btn bf-btn--ghost" type="button">Login</button>
+          <button class="bf-btn bf-btn--primary" type="button">Sign up</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main class="catalog-main">
+      <div class="wrap catalog-layout">
+        <!-- Left filters -->
+        <aside class="catalog-filters" aria-label="Filters">
+  <!-- SEARCH FIRST -->
+  <div class="catalog-search">
+    <label class="catalog-label" for="q">SEARCH</label>
+    <input id="q" class="catalog-input" type="search" placeholder="Search by title..." />
+    <p class="catalog-hint">Tip: choose a genre + search by title.</p>
+  </div>
+
+  <!-- THEN GENRE -->
+  <h3 class="catalog-label">GENRE</h3>
+
+  <div class="catalog-chips" id="chips" role="group" aria-label="Genre filters">
+    <button class="chip active" type="button" data-filter="All">All</button>
+    <button class="chip" type="button" data-filter="Fiction">Fiction</button>
+    <button class="chip" type="button" data-filter="Non-Fiction">Non-Fiction</button>
+    <button class="chip" type="button" data-filter="Mystery">Mystery</button>
+    <button class="chip" type="button" data-filter="Science Fiction">Science Fiction</button>
+    <button class="chip" type="button" data-filter="Romance">Romance</button>
+    <button class="chip" type="button" data-filter="Biography">Biography</button>
+    <button class="chip" type="button" data-filter="History">History</button>
+    <button class="chip" type="button" data-filter="Self-Help">Self-Help</button>
+  </div>
+</aside>
+
+
+        <!-- Right content -->
+        <section class="catalog-content" aria-label="Books">
+          <div class="catalog-topline">
+            <div class="catalog-count">
+              <span id="visibleCount">0</span> books found
+            </div>
+          </div>
+
+          <!-- JS will render all books here -->
+          <div class="books-grid" id="grid"></div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ===== FOOTER (your code) ===== -->
+    <footer>
+      <div class="wrap" id="foot-grid">
+        <div>
+          <div id="foot-brand">
+            <span id="foot-logo"><img src="images/NewLogo.png" alt="Bookify logo" /></span>
+            <span id="foot-name">Bookify</span>
+          </div>
+          <p id="tag">
+            Your gateway to endless knowledge.<br />
+            Discover, borrow, and explore our curated collection of literary treasures.
+          </p>
+        </div>
+
+        <div>
+          <h4>EXPLORE</h4>
+          <a href="#">About Us</a>
+          <a href="#">Browse Catalog</a>
+          <a href="#">Fiction</a>
+          <a href="#">Non-Fiction</a>
+        </div>
+
+        <div>
+          <h4>ACCOUNT</h4>
+          <a href="#">My Profile</a>
+          <a href="#">Borrowed Books</a>
+          <a href="#">Reading History</a>
+        </div>
+
+        <div>
+          <h4>LIBRARY HOURS</h4>
+          <div class="hrs"><span>Monday - Friday</span><span>9AM - 9PM</span></div>
+          <div class="hrs"><span>Saturday</span><span>10AM - 6PM</span></div>
+          <div class="hrs"><span>Sunday</span><span>12PM - 5PM</span></div>
+        </div>
+      </div>
+
+      <div class="wrap" id="bottom">
+        <span>© <span id="year"></span> Bookify Library. All rights reserved.</span>
+        <div id="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
