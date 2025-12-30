@@ -565,19 +565,6 @@ img {
   font-weight: 800;
 }
 
-
-@media (max-width: 920px) {
-  .history__list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 520px) {
-  .history__list {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Responsive */
 @media (max-width: 920px) {
   .nav {
@@ -661,7 +648,6 @@ img {
   font-weight: 800;
   font-size: 12px;
   line-height: 1.2;
-
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -672,7 +658,6 @@ img {
   font-size: 11px;
   color: var(--muted);
   font-weight: 600;
-
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
