@@ -1,41 +1,41 @@
 [
- {
-  "id": 1,
-  "title": "Harry Potter and the Sorcerer’s Stone",
-  "author": "J.K. Rowling",
-  "category": "Fantasy",
-  "year": 1997,
-  "language": "English",
-  "isbn": "9780590353427",
-  "description": "Harry Potter and the Sorcerer’s Stone is the first book in the famous fantasy series that introduces readers to the magical world of Hogwarts. The story follows Harry, an orphaned boy who discovers on his eleventh birthday that he is a wizard. As he begins his studies at Hogwarts School of Witchcraft and Wizardry, Harry learns about friendship, courage, and loyalty while uncovering secrets about his past. The book blends magic, mystery, and adventure, creating an engaging story that sets the foundation for an epic journey.",
-  "cover": "images/harry-potter.jpg",
-  "available": true
-},
- {
-  "id": 2,
-  "title": "The Alchemist",
-  "author": "Paulo Coelho",
-  "category": "Fiction",
-  "year": 1988,
-  "language": "English",
-  "isbn": "9780061122415",
-  "description": "The Alchemist tells the story of Santiago, a young shepherd who dreams of finding a hidden treasure. Motivated by recurring dreams, he sets out on a journey that takes him far from home and challenges him both physically and emotionally. Along the way, Santiago meets mentors who teach him about listening to his heart, recognizing opportunities, and following his personal destiny. The novel explores themes of self-discovery, faith, and perseverance, encouraging readers to pursue their dreams despite fear and uncertainty.",
-  "cover": "images/the-alchemist.jpg",
-  "available": true
-},
- {
-  "id": 3,
-  "title": "Atomic Habits",
-  "author": "James Clear",
-  "category": "Self-Improvement",
-  "year": 2018,
-  "language": "English",
-  "isbn": "9780735211292",
-  "description": "Atomic Habits is a practical guide that explains how small, consistent habits can lead to significant personal improvement over time. James Clear presents a clear framework for understanding how habits are formed and how they can be changed effectively. The book focuses on building good habits, breaking bad ones, and creating systems that support long-term success rather than relying only on motivation. With real-world examples and actionable advice, Atomic Habits helps readers improve productivity, health, and personal growth through simple daily actions.",
-  "cover": "images/atomic-habits.jpg",
-  "available": false
-},
- {
+  {
+    "id": 1,
+    "title": "Harry Potter and the Sorcerer’s Stone",
+    "author": "J.K. Rowling",
+    "category": "Fantasy",
+    "year": 1997,
+    "language": "English",
+    "isbn": "9780590353427",
+    "description": "Harry Potter and the Sorcerer’s Stone is the first book in the famous fantasy series that introduces readers to the magical world of Hogwarts. The story follows Harry, an orphaned boy who discovers on his eleventh birthday that he is a wizard. As he begins his studies at Hogwarts School of Witchcraft and Wizardry, Harry learns about friendship, courage, and loyalty while uncovering secrets about his past. The book blends magic, mystery, and adventure, creating an engaging story that sets the foundation for an epic journey.",
+    "cover": "images/harry-potter.jpg",
+    "available": true
+  },
+  {
+    "id": 2,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "category": "Fiction",
+    "year": 1988,
+    "language": "English",
+    "isbn": "9780061122415",
+    "description": "The Alchemist tells the story of Santiago, a young shepherd who dreams of finding a hidden treasure. Motivated by recurring dreams, he sets out on a journey that takes him far from home and challenges him both physically and emotionally. Along the way, Santiago meets mentors who teach him about listening to his heart, recognizing opportunities, and following his personal destiny. The novel explores themes of self-discovery, faith, and perseverance, encouraging readers to pursue their dreams despite fear and uncertainty.",
+    "cover": "images/the-alchemist.jpg",
+    "available": true
+  },
+  {
+    "id": 3,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "category": "Self-Improvement",
+    "year": 2018,
+    "language": "English",
+    "isbn": "9780735211292",
+    "description": "Atomic Habits is a practical guide that explains how small, consistent habits can lead to significant personal improvement over time. James Clear presents a clear framework for understanding how habits are formed and how they can be changed effectively. The book focuses on building good habits, breaking bad ones, and creating systems that support long-term success rather than relying only on motivation. With real-world examples and actionable advice, Atomic Habits helps readers improve productivity, health, and personal growth through simple daily actions.",
+    "cover": "images/atomic-habits.jpg",
+    "available": false
+  },
+  {
     "id": 4,
     "title": "You’ve Reached Sam",
     "author": "Dustin Thao",
@@ -44,8 +44,79 @@
     "language": "English",
     "isbn": "9781250762047",
     "description": "You’ve Reached Sam is a heartfelt young adult novel about love, grief, and the painful process of letting go. Julie has her future planned out—leaving her small town, building a life with her boyfriend Sam, and chasing the dreams they shared together. But when Sam suddenly dies, Julie’s world collapses, and she tries to shut down every memory connected to him. Then, in a moment of desperation, she calls Sam’s phone just to hear his voicemail—and unbelievably, Sam answers. Through their calls, Julie gets a temporary second chance to say the words she never got to say, to relive moments she thought were gone forever, and to face the truth that holding on too tightly can stop her from healing. Emotional, tender, and beautifully written, the story explores what it means to say goodbye when you’re not ready, and how love can remain even after loss.",
-    "cover": "images/youve-reached-sam.jpg",
+    "cover": "/images/youve-reached-sam.jpg",
     "available": true
-  }
-
+  },
+  {
+    "id": 5,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "category": "Fantasy",
+    "year": 1937,
+    "language": "English",
+    "isbn": "9780547928227",
+    "description": "The Hobbit is a classic fantasy novel that follows Bilbo Baggins, a quiet and unassuming hobbit who is swept into an unexpected adventure. Alongside a group of dwarves and the wizard Gandalf, Bilbo journeys across Middle-earth to reclaim a lost kingdom from the fearsome dragon Smaug. Throughout the journey, Bilbo discovers courage, cleverness, and inner strength he never knew he possessed. The book is a tale of adventure, friendship, and personal growth.",
+    "cover": "images/the-hobbit.jpg",
+    "available": true
+  },
+  {
+    "id": 6,
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert T. Kiyosaki",
+    "category": "Self-Improvement",
+    "year": 1997,
+    "language": "English",
+    "isbn": "9781612680194",
+    "description": "Rich Dad Poor Dad explores the differences in mindset between people who work for money and those who make money work for them. Through lessons learned from two father figures, the book emphasizes financial education, investing, and building assets. It challenges traditional beliefs about money, careers, and financial security, encouraging readers to think differently about wealth and independence.",
+    "cover": "images/rich-dad-poor-dad.jpg",
+    "available": true
+  },
+  {
+    "id": 7,
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "category": "Self-Improvement",
+    "year": 2020,
+    "language": "English",
+    "isbn": "9780857197689",
+    "description": "The Psychology of Money explains how personal experiences, emotions, and behavior influence financial decisions more than logic or intelligence. Through engaging short stories, the book highlights the importance of patience, long-term thinking, and understanding risk. It provides valuable insights into how people think about money and how to develop healthier financial habits.",
+    "cover": "images/the-psychology-of-money.jpg",
+    "available": true
+  },
+  {
+  "id": 8,
+  "title": "The Fault in Our Stars",
+  "author": "John Green",
+  "category": "Young Adult",
+  "year": 2012,
+  "language": "English",
+  "isbn": "9780525478812",
+  "description": "The Fault in Our Stars is an emotional young adult novel about two teenagers who meet at a cancer support group and fall in love. Hazel and Gus share a deep connection as they navigate illness, loss, and the meaning of life. The story is both heartbreaking and humorous, exploring love, mortality, and what it means to leave a mark on the world.",
+  "cover": "images/the-fault-in-our-stars.jpg",
+  "available": true
+},
+{
+  "id": 9,
+  "title": "Think Like a Monk",
+  "author": "Jay Shetty",
+  "category": "Self-Improvement",
+  "year": 2020,
+  "language": "English",
+  "isbn": "9781982134488",
+  "description": "Think Like a Monk combines ancient wisdom with modern advice to help readers reduce stress and find purpose. Jay Shetty shares lessons he learned as a monk, offering practical techniques for mindfulness, gratitude, and self-discipline. The book encourages readers to train their minds for peace, clarity, and meaningful living.",
+  "cover": "images/think-like-a-monk.jpg",
+  "available": false
+},
+{
+  "id": 10,
+  "title": "Divergent",
+  "author": "Veronica Roth",
+  "category": "Young Adult",
+  "year": 2011,
+  "language": "English",
+  "isbn": "9780062024039",
+  "description": "Divergent is a dystopian young adult novel set in a future society divided into factions based on personality traits. Tris Prior discovers she does not fit into any single faction, making her a threat to the system. As she uncovers hidden truths, Tris must choose between loyalty, courage, and survival. The story explores identity, freedom, and bravery.",
+  "cover": "images/divergent.jpg",
+  "available": true
+}
 ]

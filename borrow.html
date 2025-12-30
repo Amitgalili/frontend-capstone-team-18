@@ -471,7 +471,6 @@
               </svg>
               Recently Viewed
             </h2>
-            <a class="history__link" href="history.html">View all →</a>
           </div>
 
           <ul id="historyList" class="history__list">
@@ -480,24 +479,57 @@
         </div>
       </section>
     </main>
+    <!-- ===== FOOTER (NEW) ===== -->
+    <footer class="site-footer">
+        <div class="container site-footer__top">
 
-    <!-- Footer -->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="col-md-4 mb-0 text-body-secondary">© 2026 Bookify, Inc</p>
+            <div class="site-footer__brand">
+                <div class="site-footer__logoRow">
+                    <img src="images/NewLogo.png" alt="Bookify" class="site-footer__logo" onerror="this.style.display='none'">
+                    <span class="site-footer__name">Bookify</span>
+                </div>
 
-      <a
-        href="/"
-        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-        aria-label="Bootstrap"
-      >
-        <img src="./images/NewLogo.png" alt="Our logo" width="120" height="90" />
-      </a>
+                <p class="site-footer__desc">
+                    Your gateway to endless knowledge.<br>
+                    Discover, borrow, and explore our curated<br>
+                    collection of literary treasures.
+                </p>
+            </div>
 
-      <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-        <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">Contact us</a></li>
-        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li>
-      </ul>
+            <div class="site-footer__col">
+                <h4>EXPLORE</h4>
+                <a href="about.html">About Us</a>
+                <a href="#">Browse Catalog</a>
+                <a href="#">Fiction</a>
+                <a href="#">Non-Fiction</a>
+            </div>
+
+            <div class="site-footer__col">
+                <h4>ACCOUNT</h4>
+                <a href="#">My Profile</a>
+                <a href="#">Borrowed Books</a>
+                <a href="#">Reading History</a>
+            </div>
+
+            <div class="site-footer__col">
+                <h4>LIBRARY HOURS</h4>
+                <div class="hours">
+                    <div><span>Monday - Friday</span><span>9AM - 9PM</span></div>
+                    <div><span>Saturday</span><span>10AM - 6PM</span></div>
+                    <div><span>Sunday</span><span>12PM - 5PM</span></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container site-footer__bottom">
+            <span>© 2025 Bookify Library. All rights reserved.</span>
+            <div class="site-footer__links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
     </footer>
 
     <script src="borrow.js"></script>
